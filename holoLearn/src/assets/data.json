@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "title": "Web Development",
+    "description": "Build interactive, modern websites from scratch."
+  },
+  {
+    "id": 2,
+    "title": "React Masterclass",
+    "description": "Become proficient in React and modern frontend tools."
+  },
+  {
+    "id": 3,
+    "title": "UI/UX Design",
+    "description": "Learn how to create beautiful, user-friendly interfaces."
+  },
+  {
+    "id": 4,
+    "title": "Node.js Fundamentals",
+    "description": "Learn to build scalable backend applications using Node.js and Express."
+  },
+  {
+    "id": 5,
+    "title": "Database Design",
+    "description": "Understand relational models, normalization, and SQL to manage structured data effectively."
+  },
+  {
+    "id": 6,
+    "title": "Python for Beginners",
+    "description": "Start programming with Python and learn the basics of logic, syntax, and problem-solving."
+  },
+  {
+    "id": 7,
+    "title": "JavaScript Essentials",
+    "description": "Master the core concepts of JavaScript and DOM manipulation for dynamic web pages."
+  },
+  {
+    "id": 8,
+    "title": "Full-Stack Development",
+    "description": "Combine frontend and backend skills to build complete web applications."
+  },
+  {
+    "id": 9,
+    "title": "Cybersecurity Basics",
+    "description": "Explore security principles, vulnerabilities, and best practices to protect digital systems."
+  },
+  {
+    "id": 10,
+    "title": "Data Analysis with Python",
+    "description": "Use Pandas, NumPy, and Matplotlib to analyze and visualize real-world data."
+  },
+  {
+    "id": 11,
+    "title": "Git & Version Control",
+    "description": "Learn to collaborate and manage code with Git, GitHub, and effective branching strategies."
+  },
+  {
+    "id": 12,
+    "title": "Cloud Computing Foundations",
+    "description": "Understand the basics of cloud services, deployment models, and popular providers like AWS and Azure."
+  },
+  {
+    "id": 13,
+    "title": "Mobile App Development",
+    "description": "Build cross-platform mobile apps using modern frameworks and responsive design principles."
+  }
+]

@@ -1,0 +1,45 @@
+/* 🎨 Variables globales y estilos base */
+:root {
+  --primary: #4a6cf7;
+  --primary-hover: #3559e0;
+  --text-dark: #222;
+  --text-light: #555;
+  --bg-light: #f9f9f9;
+  --bg-white: #fff;
+  --radius: 8px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --transition: 0.25s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Contenedor general reutilizable */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Inputs y botones globales */
+input,
+textarea,
+button {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+  transition: var(--transition);
+}
