@@ -1,0 +1,24 @@
+.courses {
+    max-width: 1000px;
+    margin: 4rem auto;
+    text-align: center;
+  }
+  
+  .course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .course-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: 0.3s;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+  }
