@@ -1,0 +1,35 @@
+.about {
+  max-width: 800px;
+  margin: 4rem auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.about h2 {
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.about-intro {
+  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+.about-values {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.value {
+  flex: 1 1 250px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
