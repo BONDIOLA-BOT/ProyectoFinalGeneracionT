@@ -1,0 +1,82 @@
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: #4a6cf7;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.nav-links,
+.nav-auth {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links a,
+.nav-auth a {
+  text-decoration: none;
+  color: #555;
+  transition: 0.25s;
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-auth a:hover,
+.nav-links a.active {
+  color: #4a6cf7;
+}
+
+.nav-auth .signup {
+  border: 1px solid #4a6cf7;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+}
+
+.nav-auth .signup:hover {
+  background-color: #4a6cf7;
+  color: #fff;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    flex-direction: column;
+    background: #fff;
+    width: 200px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+}

@@ -1,0 +1,91 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  background: linear-gradient(#90a4ff, #f8f9ff);
+}
+
+.home-container {
+  text-align: center;
+  max-width: 600px;
+  padding: 4rem;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.home p {
+  color: #555;
+  margin-top: 1rem;
+}
+
+.cta {
+  margin-top: 2rem;
+  background: #4a6cf7;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  background: #3559e0;
+}
+
+.cta > a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Testimonials Section */
+.testimonials {
+  width: 100%;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.review-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.review-card p {
+  color: #444;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.review-card span {
+  display: block;
+  color: #4a6cf7;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
