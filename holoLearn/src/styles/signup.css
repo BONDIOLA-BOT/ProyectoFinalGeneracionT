@@ -1,0 +1,32 @@
+.auth {
+  max-width: 400px;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.auth form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.auth input {
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.auth button {
+  background: #4a6cf7;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth button:hover {
+  background: #3559e0;
+}

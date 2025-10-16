@@ -1,0 +1,102 @@
+.footer {
+  background-color: var(--bg-white);
+  border-top: 1px solid #e5e5e5;
+  padding: 3rem 1rem 1rem;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Sección izquierda */
+.footer-about {
+  flex: 1 1 300px;
+}
+
+.footer-about h3 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.footer-about p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+/* Sección derecha (formulario de contacto) */
+.footer-contact {
+  flex: 1 1 300px;
+}
+
+.footer-contact h4 {
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.footer-contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer-contact input,
+.footer-contact textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  resize: none;
+}
+
+.footer-contact button {
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius);
+}
+
+.footer-contact button:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Parte inferior */
+.footer-bottom {
+  text-align: center;
+  padding-top: 1.5rem;
+  color: var(--text-light);
+  font-size: 0.85rem;
+  border-top: 1px solid #eee;
+  margin-top: 2rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-contact,
+  .footer-about {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-contact form {
+    align-items: center;
+  }
+
+  .footer-contact input,
+  .footer-contact textarea {
+    max-width: 350px;
+  }
+}
