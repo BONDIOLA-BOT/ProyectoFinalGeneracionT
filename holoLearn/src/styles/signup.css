@@ -1,3 +1,5 @@
+@import url("../styles/variables.css");
+
 .auth {
   max-width: 400px;
   margin: 4rem auto;
@@ -14,11 +16,12 @@
 .auth input {
   padding: 0.8rem;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: var(--border-color);
+  background-color: var(--primary-hover);
 }
 
 .auth button {
-  background: #4a6cf7;
+  background: var(--primary);
   color: white;
   border: none;
   padding: 0.8rem;
@@ -28,5 +31,5 @@
 }
 
 .auth button:hover {
-  background: #3559e0;
+  background: var(--primary-hover);
 }

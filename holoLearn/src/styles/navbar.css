@@ -1,5 +1,7 @@
+@import url("../styles/variables.css");
+
 .navbar {
-  background-color: #fff;
+  background-color: var(--bg-white);
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   position: sticky;
   top: 0;
@@ -14,7 +16,7 @@
 }
 
 .logo {
-  color: #4a6cf7;
+  color: var(--primary);
   font-weight: 600;
   font-size: 1.5rem;
   text-decoration: none;
@@ -30,7 +32,7 @@
 .nav-links a,
 .nav-auth a {
   text-decoration: none;
-  color: #555;
+  color: var(--text-ligth);
   transition: 0.25s;
   font-weight: 500;
 }
@@ -38,24 +40,31 @@
 .nav-links a:hover,
 .nav-auth a:hover,
 .nav-links a.active {
-  color: #4a6cf7;
+  color: var(--primary);
 }
 
 .nav-auth .signup {
-  border: 1px solid #4a6cf7;
+  border: 1px solid var(--primary);
   padding: 0.4rem 0.8rem;
   border-radius: 6px;
 }
 
 .nav-auth .signup:hover {
-  background-color: #4a6cf7;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--bg-white);
 }
 
 .menu-toggle {
   display: none;
   font-size: 1.6rem;
   cursor: pointer;
+}
+
+.toggle-mode {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 768px) {
@@ -65,7 +74,7 @@
     right: 0;
     top: 70px;
     flex-direction: column;
-    background: #fff;
+    background: var(--bg-white);
     width: 200px;
     padding: 1rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);

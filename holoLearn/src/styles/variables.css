@@ -1,0 +1,62 @@
+/* ===== Light Mode ===== */
+:root {
+  /* --- Primary --- */
+  --primary: #4a6cf7;
+  --primary-hover: #3559e0;
+
+  /* --- Secondary & Accent --- */
+  --secondary: #6c63ff;
+  --secondary-hover: #554de0;
+
+  /* --- Success / Warning / Danger --- */
+  --success: #3dbb64;
+  --success-hover: #2fa656;
+
+  --warning: #f5b400;
+  --warning-hover: #e09d00;
+
+  --danger: #e74c3c;
+  --danger-hover: #c0392b;
+
+  /* --- Neutrals & Background --- */
+  --text-dark: #222;
+  --text-light: #555;
+  --bg-light: #f9f9f9;
+  --bg-white: #fff;
+  --card-bg: #ffffff;
+  --border-color: #e0e0e0;
+
+  /* --- Transitions --- */
+  --transition-speed: 0.3s;
+
+  --radius: 8px;
+}
+
+/* ===== Dark Mode ===== */
+body.dark-mode {
+  /* --- Primary --- */
+  --primary: #7b9cff;
+  --primary-hover: #a1b8ff;
+
+  /* --- Secondary & Accent --- */
+  --secondary: #9f97ff;
+  --secondary-hover: #c1bbff;
+
+  /* --- Success / Warning / Danger --- */
+  --success: #59d98d;
+  --success-hover: #42c178;
+
+  --warning: #ffd75e;
+  --warning-hover: #ffcc3b;
+
+  --danger: #ff7364;
+  --danger-hover: #ff5a4b;
+
+  /* --- Neutrals & Background --- */
+  --text-dark: #f5f5f5;
+  --text-light: #cccccc;
+  --bg-light: #121212;
+  --bg-white: #1e1e1e;
+  --card-bg: #2a2a2a;
+  --border-color: #333;
+}
