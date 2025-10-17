@@ -17,7 +17,8 @@
   padding: 0.8rem;
   border-radius: 6px;
   border: var(--border-color);
-  background-color: var(--primary-hover);
+  background-color: var(--bg-white);
+  color: var(--text-dark);
 }
 
 .auth button {
