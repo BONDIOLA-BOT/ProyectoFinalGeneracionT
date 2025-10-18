@@ -42,8 +42,11 @@ export default function Signup() {
         <input type="email" name="email" placeholder="Email" />
         <input type="password" name="password" placeholder="Password" />
         <button type="submit">Sign Up</button>
-        {status && <p id="agregar">{status}</p>}
       </form>
+
+      <div className="status-space">
+        <p id="agregar" aria-live="polite">{status}</p>
+      </div>
     </section>
   );
 }

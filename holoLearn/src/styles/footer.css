@@ -92,6 +92,10 @@
     text-align: center;
   }
 
+  .footer-about{
+    max-height: 60px;
+  }
+
   .footer-contact form {
     align-items: center;
   }

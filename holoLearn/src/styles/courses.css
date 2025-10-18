@@ -24,3 +24,9 @@
 .course-card:hover {
   transform: translateY(-5px);
 }
+
+@media (max-width: 1024px) {
+  .course-list{
+    margin: 40px;
+  }
+}

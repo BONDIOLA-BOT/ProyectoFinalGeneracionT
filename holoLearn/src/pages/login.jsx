@@ -1,5 +1,6 @@
 import "../styles/login.css";
 import { useState } from "react";
+import RedirectButton from "../components/redirect_button";
 
 export default function Login() {
   const [status, setStatus] = useState(null);
@@ -34,9 +35,8 @@ export default function Login() {
       console.log(err);
       setStatus("Error: " + err.message);
     }
-
-
   };
+
   return (
     <section className="auth">
       <h2>Login</h2>
@@ -44,8 +44,13 @@ export default function Login() {
         <input type="email" name="email" placeholder="Email" />
         <input type="password" name="password" placeholder="Password" />
         <button type="submit">Login</button>
-        {status && <p id="agregar">{status}</p>}
       </form>
+
+      <div className="status-space">
+        <p id="agregar" aria-live="polite">{status}</p>
+      </div>
+
+      <RedirectButton path={"/signup"} text={"Don´t have an account? Sign up here!"}></RedirectButton>
     </section>
   );
 }

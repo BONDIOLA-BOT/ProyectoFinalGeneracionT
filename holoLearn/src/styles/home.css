@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   min-height: 40vh;
-  background: linear-gradient(var(--secondary), var(--primary));
+  background: linear-gradient(var(--primary), var(--bg-white));
 }
 
 .home-container {

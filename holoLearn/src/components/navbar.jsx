@@ -5,16 +5,14 @@ import "../styles/variables.css";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    const storedTheme = localStorage.getItem("darkMode") === "true";
-    setDarkMode(storedTheme);
-  }, []);
+  
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem("darkMode") === "true";
+  });
 
   useEffect(() => {
     document.body.classList.toggle("dark-mode", darkMode);
-    localStorage.setItem("darkMode", darkMode);
+    localStorage.setItem("darkMode", darkMode ? "true" : "false");
   }, [darkMode]);
 
   return (
@@ -38,8 +36,9 @@ export default function Navbar() {
           </li>
           <li>
             <button
-              class="toggle-mode"
+              className="toggle-mode"
               type="button"
+              aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
               onClick={() => setDarkMode(!darkMode)}
             >
               {darkMode ? "☀️" : "🌙"}
