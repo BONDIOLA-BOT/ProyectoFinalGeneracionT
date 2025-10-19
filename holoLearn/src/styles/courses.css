@@ -20,22 +20,29 @@
   border-radius: var(--radius);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 220px; 
 }
 
 .course-card:hover {
   transform: translateY(-5px);
 }
 
-.course-card button{
+.course-card button {
   border-radius: var(--radius);
   padding: 0.7em;
   transition: 0.3s;
 
   background-color: var(--text-dark);
   color: var(--bg-white);
-}
 
-.course-card button:hover{
+  margin-top: auto; 
+  align-self: flex-start; 
+}
+.course-card button:hover {
   transform: translateY(3px);
   box-shadow: 1px 1px 10px var(--primary), -1px -1px 10px var(--primary-hover);
 }
