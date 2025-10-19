@@ -4,19 +4,20 @@ import MainLayout from "./layouts/mainLayout";
 
 import Home from "./pages/home";
 import Courses from "./pages/courses";
+import Course from "./pages/course"; 
 import About from "./pages/about";
 import Login from "./pages/login";
 import Signup from "./pages/signup";
 
 function App() {
   return (
-    <BrowserRouter >
+    <BrowserRouter>
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/courses/:id" element={<Course />} /> 
           <Route path="/about" element={<About />} />
-
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
         </Route>
@@ -25,4 +26,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;

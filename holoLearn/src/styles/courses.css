@@ -11,6 +11,7 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
+  list-style: none;
 }
 
 .course-card {
@@ -23,6 +24,20 @@
 
 .course-card:hover {
   transform: translateY(-5px);
+}
+
+.course-card button{
+  border-radius: var(--radius);
+  padding: 0.7em;
+  transition: 0.3s;
+
+  background-color: var(--text-dark);
+  color: var(--bg-white);
+}
+
+.course-card button:hover{
+  transform: translateY(3px);
+  box-shadow: 1px 1px 10px var(--primary), -1px -1px 10px var(--primary-hover);
 }
 
 @media (max-width: 1024px) {
